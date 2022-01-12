@@ -1,0 +1,46 @@
+Static websites are ones that are fixed and display the same content for
+every user usually written exclusively in HTML
+
+Dynamic website on the other hand is one that can display different
+content and provide user interaction, by making use of advanced programming and databases in addition to HTML
+As you can tell static websites are easier to create while dynamic websites require more work
+
+the world wide web is about communication between web clients and
+web servers
+
+Clients- are often browsers(Chrome,Edge,Safari) but they can be any
+type of program or device
+
+Servers- are most often computers in the cloud
+
+communication between clients and servers is done by request and
+response
+
+A typical HTTP Request / Response circle:
+
+The browser requests an HTML page. The server returns an HTML file.
+The browser requests a style sheet. The server returns a CSS file.
+The browser requests an JPG image. The server returns a JPG ile.
+The browser requests JavaScript code. The server returns a JS file
+The browser requests data. The server returns data (in XML or JSON).
+
+Server side - Backend
+Client side - Frontend
+
+DNS - convert the name of the domains in IP Adress for browsers
+can load the resources from the internet
+
+HTTPS - is a secure version of HTTP which is the primary protocol used to send data between a web browser
+HTTPS is encrypted in order to increase security of data transfer. This is particularly important when
+users transmit sensitive data, such as by logging into a banck account, email service or health insurance
+provider
+
+Any website, especially those that require login credentials should use HTTPS
+
+Web Services
+
+- is available over the internet or private(intranet)
+- Uses a standardized XML messaging system
+
+I created a little system of pages to have a different navigation on my study
+for me its more easy to access all my content using this page called index.html
