@@ -1,0 +1,69 @@
+<table>
+  <caption>
+    <b>Jogos</b>
+  </caption>
+  <thead>
+    <tr>
+      <!--define uma linha -->
+      <th>Nome</th>
+      <th>Data</th>
+      <th>Empresa</th>
+      <th>Avaliação</th>
+      <th>Preço</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Skyrim</td>
+      <td>11/11/11</td>
+      <td>Bethesda</td>
+      <td>10</td>
+      <td>R$ 50,00</td>
+    </tr>
+    <tr>
+      <td>Far Cry</td>
+      <td>29/11/12</td>
+      <td>Ubisoft</td>
+      <td>9,6</td>
+      <td>R$ 70,00</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="4">Total</td>
+      <td>R$ 120,00</td>
+    </tr>
+  </tfoot>
+</table>
+
+<style>
+  table {
+    border-collapse: collapse;
+  }
+  th,
+  th {
+    padding: 10px;
+  }
+  thead tr {
+    border-bottom: solid 3px #444;
+  }
+  tbody tr:hover {
+    background-color: #dedede;
+  }
+  tfoot {
+    background-color: #444;
+    color: #fff;
+    font-weight: bold;
+  }
+</style>
+
+<!-- a tabela funciona como uma pagina normal html
+ela possui suas tags para header,body e footer 
+thead = header = th-->
+
+<!--se eu for ter 4 colunas na minha tabela entao
+eu irei ter um th para cada coluna, executando essa
+pagina fica mais facil de entender-->
+
+<!--colspan = para a coluna ocupar mais colunas
+rowspan = mesma coisa so que para as linhas-->
