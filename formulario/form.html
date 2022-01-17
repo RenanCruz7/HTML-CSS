@@ -1,0 +1,48 @@
+<head>
+  <title>Vaga</title>
+  <link rel="stylesheet" href="form.css" />
+</head>
+
+<body>
+  <h1>Cadastro para Vaga de Emprego</h1>
+  <form action="http://localhost:3003/jogadores" method="POST">
+    <b>Insira seu Nome</b>
+    <input type="text" name="nome" />
+    <b>Insira sua idade</b>
+    <input type="text" name="idade" />
+    <b>Conte um pouco sobre você</b>
+    <textarea name="bio" cols="30" rows="10"></textarea>
+
+    <div>
+      <b>Tipo de Vaga</b><br />
+      <input type="radio" name="tipo" value="Front" /> Front End
+      <input type="radio" name="tipo" value="Back" /> Back End
+      <input type="radio" name="tipo" value="UX/UI" /> UX / UI
+    </div>
+    <br />
+    <div>
+      <b>Opção de Trabalho</b><br />
+      <input type="checkbox" name="opcao" value="PJ" />PJ
+      <input type="checkbox" name="opcao" value="CLT" />CLT
+    </div>
+
+    <p><b>Selecione sua Cidade</b></p>
+    <select name="cidade">
+      <option value="">Selecione</option>
+      <option value="guaru">Guarujá</option>
+      <option value="San">Santos</option>
+      <option value="SV">São Vicente</option>
+      <option value="PG">Praia Grande</option>
+    </select>
+    <br /><br />
+    <p><b>Interesses:</b></p>
+    <select name="interesse" multiple size="5">
+      <option value="JS">Javascript</option>
+      <option value="React">React</option>
+      <option value="Java">Java</option>
+      <option value="HTML+CSS">HTML + CSS</option>
+    </select>
+    <br /><br />
+    <button>Cadastrar</button>
+  </form>
+</body>

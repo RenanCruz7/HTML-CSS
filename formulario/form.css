@@ -1,0 +1,15 @@
+input,
+textarea {
+  display: block;
+  margin-bottom: 20px;
+}
+input[type='radio'],
+input[type='checkbox'] {
+  display: inline;
+  margin-bottom: 10px;
+}
+button {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+}
