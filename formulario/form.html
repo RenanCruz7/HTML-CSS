@@ -5,7 +5,8 @@
 
 <body>
   <h1>Cadastro para Vaga de Emprego</h1>
-  <form action="http://localhost:3003/jogadores" method="POST">
+  <form method="POST">
+    <input type="hidden" name="id" value="3" />
     <b>Insira seu Nome</b>
     <input type="text" name="nome" />
     <b>Insira sua idade</b>
@@ -43,6 +44,9 @@
       <option value="HTML+CSS">HTML + CSS</option>
     </select>
     <br /><br />
-    <button>Cadastrar</button>
+    <button formaction="http://localhost:3003/jogadores">Cadastrar</button>
   </form>
 </body>
+
+<!--é comum usaram um input hidden para guardar o id da operação
+como formar de identificar o que foi feito-->
