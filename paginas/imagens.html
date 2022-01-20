@@ -6,17 +6,32 @@
   <b>Porsche</b>
   <img src="/porshe.jpg" width="300" height="300" />
   <b>Eu e Mimish(Meu Melhor Amigo)</b>
-  <img src="/eu_e_mimish.gif">
+  <img src="/eu_e_mimish.gif" />
 </p>
 
 <p class="circular">
-  <img  src="http://files.cod3r.com.br/curso-web/imagem3.png" height=342>
+  <img src="http://files.cod3r.com.br/curso-web/imagem3.png" height="342" />
 </p>
 
 <p class="texto">
-  <img  src="/dog.png"  height="100" align="left"/>
-  O cachorro é considerado por muitas culturas o melhor amigo
-  homem
+  <img src="/dog.png" height="100" align="left" />
+  O cachorro é considerado por muitas culturas o melhor amigo homem
+</p>
+
+<p class="cidade"></p>
+<!--tambem é possivel exibir uma imagem
+via CSS apenas-->
+
+<p>
+  <picture>
+    <source
+      srcset="http://files.cod3r.com.br/curso-web/logo-larga.png"
+      media="(min-width: 700px)"
+    />
+    <img src="http://files.cod3r.com.br/curso-web/logo-estreita.png" />
+  </picture>
+  <!--neste caso quando a imagem logo-larga atingir uma largura de 600px <=
+  a imagem sera substituida pela logo-estreita-->
 </p>
 
 <!--Caso vc queira utilizar uma imagem local
@@ -37,15 +52,25 @@ height = altura
     font-size: 50px;
   }
 
-  .circular{
+  .circular {
     width: 513px;
     background-color: #444;
   }
 
-  .texto{
-    width:400px;
+  .texto {
+    width: 400px;
   }
-  .texto img{
+  .texto img {
     margin-right: 12;
+  }
+
+  .cidade {
+    width: 513px;
+    height: 342px;
+    background-image: url('http://files.cod3r.com.br/curso-web/imagem4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 100px;
   }
 </style>
