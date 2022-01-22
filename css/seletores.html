@@ -1,44 +1,66 @@
+<!--
+* = seletor universal
+.tag = seletor de classe
+#id = seletor de ID
+#aninhado > div - dentro de aninhado quero aplicar estilo na div - descendente direto
+#aninhado > section - nao funciona o correto seria #aninhado section
+p + ul - dps da tag p vou selecionar o ul e aplicar estilo
+p + ol - nao ira funcionar porque eles nao sao vizinhos so ira funcionar se for 
+p ~ ol = irmãos de forma geral
+[feira=value] - seleção por atributo
+span:nth-child(1) - quero o primeiro filho de alguem que é do tipo span
+
+section > :nth-child(even) - nesse caso eu pego dentro de sections os filhos pares
+section > :nth-child(odd) - pego os filhos impares
+ - daohra pra fazer um esquema zebrado
+
+espaço ( ) é igual a descendente
+link importante:
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Selectors
+-->
+
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>CSS Selectors</title>
-    <link rel="stylesheet" href="css/tag.css">
+    <link rel="stylesheet" href="css/tag.css" />
     <style>
-        /* ... */
+      section > :nth-child(even) {
+        color: #ff0;
+        background-color: #f77;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <div class='tag'>
-        <div class='tag'>
-            <p class='tag'>1</p>
-            <ul class='tag' feira='casa'>
-                <li>Arroz</li>
-                <li>Feijão</li>
-            </ul>
-            <ul class='tag' feira='escritorio empresa'>
-                <li>Café</li>
-                <li>Água</li>
-            </ul>
-            <ol id='aprovados' class='tag'>
-                <li>Maria</li>
-                <li>Pedro</li>
-                <li>Ana</li>
-            </ol>
-            <div id='aninhado' class='tag'>
-                <div class="tag">
-                    <section class='tag'>
-                        <span class='tag'>1</span>
-                        <p class='tag'>2</p>
-                        <span class='tag'>3</span>
-                    </section>
-                </div>
-            </div>
+  <body>
+    <div class="tag">
+      <div class="tag">
+        <p class="tag">1</p>
+        <ul class="tag" feira="casa">
+          <li>Arroz</li>
+          <li>Feijão</li>
+        </ul>
+        <ul class="tag" feira="escritorio empresa">
+          <li>Café</li>
+          <li>Água</li>
+        </ul>
+        <ol id="aprovados" class="tag">
+          <li>Maria</li>
+          <li>Pedro</li>
+          <li>Ana</li>
+        </ol>
+        <div id="aninhado" class="tag">
+          <div class="tag">
+            <section class="tag nolabel">
+              <span class="tag">1</span>
+              <p class="tag">2</p>
+              <span class="tag">3</span>
+            </section>
+          </div>
         </div>
+      </div>
     </div>
     <script src="js/tag.js"></script>
-</body>
-
+  </body>
 </html>
