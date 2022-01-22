@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Origem CSS: Externo, Interno e Inline</title>
     <style>
-        /* ... */
+      body {
+        background-color: aquamarine;
+      }
     </style>
-</head>
+    <link rel="stylesheet" href="css/externo.css" />
+  </head>
 
-<body>
+  <body style="background-color: coral">
     <h1>E agora?</h1>
-</body>
-
+  </body>
 </html>
+<!--o primeiro que vai ser executo é o ultimo que aparecer
+nesse caso a cor que esta no arquivo externo apareceria
+porém quando temos um css defino inline ele tem a prioridade
+maxima
+prioridade:
+1-inline
+2 - quem vem por ultimo
+-->
