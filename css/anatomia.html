@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Anatomia CSS</title>
     <style>
-        .selector{
-            color:crimson;
-            font-size: 100px;
-            /*é possivel ter multiplos valores
+      .selector {
+        color: #fff;
+        font-size: 100px;
+        text-align: center;
+        /*é possivel ter multiplos valores
             border coloca uma borda de 10 pixeis na cor azul
             */
-            border: solid 10px navy;/*shorthand property*/
-            font-family: Brush Script MT;
-            /*trocar a fonte do texto para Helvetica caso nao exista essa fonte
+        border: solid 10px navy; /*shorthand property*/
+        font-family: Brush Script MT;
+        /*trocar a fonte do texto para Helvetica caso nao exista essa fonte
             ele troca a fonte para monospace*/
-        }
+        width: calc(100% - 300px);
+        /*acima temos uma função que diminui a largura da imagem
+        onde se retira 300px de 100% da imagem*/
+        background-color: rgb(34, 153, 189);
+      }
+      /*Usando uma pseudo-classe: nesse caso essa pseudo classe
+      sera aplicada quando o mouse do usuario passar por cima dele*/
+      .selector:hover {
+        background-color: orangered;
+      }
+
+      /*Usando um pseudo-elemento: nesse caso apenas na primeira
+      letra da palavra*/
+      .selector::first-letter {
+        font-size: 120px;
+        font-weight: bold;
+      }
+      /*todas as propriedades no CSS utilizam do "-" para separar suas propriedades
+      tipo: text-align , font-size e etc isso se aplica tbm a pseudo-classes
+      e pseudo-elementos*/
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="selector">Conteúdo</div>
-</body>
-
+  </body>
 </html>
