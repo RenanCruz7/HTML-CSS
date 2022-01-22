@@ -5,7 +5,46 @@
     <meta charset="UTF-8">
     <title>Box Model</title>
     <style>
-        /* ... */
+        /*
+        padding: n; aplica em todos os lados
+        padding: n1 n2; n1 corresponde a parte de cima e de baixo e n2 corresponde a direita e esquerda
+        padding: n1 n2 n3 n4; cada n corresponde a um lado em sentido horario 
+        
+        box model vem na seguinte sequencia:
+
+        margin
+        border
+        padding
+        conteudo
+
+        caso fique em duvida abrir uma pagina e inspecionar ela
+        
+        */
+        
+
+
+
+
+        body{
+            font-size:80px;
+        }
+        .c1{
+            background-color: orange;
+        }
+        .c2{
+            background-color: skyblue;
+        }
+        .c3{
+            background-color: tomato;
+        }
+        div{
+            float: left; /*deixa os elementos juntos na esquerda*/
+            padding-top:100px;
+            padding: 10px 50px 100px 150px;
+            padding:100px 50px;
+            margin:0px 20px;
+            border:solid 15px black;
+        }
     </style>
 </head>
 
