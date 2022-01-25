@@ -7,6 +7,25 @@
         body {
             font-size: 45px;
         }
+        div{
+            background-color: deepskyblue;
+            width:100%;
+            height: 300px;
+            padding:100px;
+            border: solid 20px;
+            box-sizing: border-box;
+        }
+        /*
+        nesse caso quando colocamos para a div ocupar 100% da largura ela acaba não considerando o padding
+        e o border nesse calcula fazendo com que ultrapasse esse limite mas se colocamos box-sizinh: border-box
+        tanto o border e o  padding são considerados fazendo com que a barra de rolagem para o lado não exista
+
+        box sizing não é passado de pai para filho porem caso voce queira que esse efeito seja passado para todos os elementos
+        voce vai precisar definir essa propriedade como propriedade universal
+        *{
+            box-sizing:border-box;
+        }
+        */
     </style>
 </head>
 <body>
