@@ -5,7 +5,42 @@
     <meta charset="UTF-8">
     <title>Unidades #01</title>
     <style>
-        /* ... */
+        /*
+        unidades:
+            absolutas - px, cm, mm - mais usada px
+            viewport - vh, vw, vmin e vmax
+                vmin é o menor valor e vmax é o maior
+                caso a altura seja maior que a largura
+                vmax = altura e vmin = largura
+            font - rem, em
+                25px para 50 = 2*em
+                em trabalha com o valor mais proximo
+                rem trabalha com a raiz da aplicação 
+        sempre utilizar fontes relativas por um motivo de acessibilidade
+
+        */
+    .unidades-absolutas{
+        position: absolute;
+        font-size:40px;
+        padding: 20px;
+        border:solid 5px #222;
+        margin: 30px;
+        width: 4cm;/*pouco usado*/
+        height:20mm;/*pouco usado*/
+        top: 150px;
+        left:200px;
+    }
+    .unidades-relativas{
+        position: absolute;
+        font-size: 4em;
+        padding:5%;
+        border: solid 1vw #222;
+        margin:.8%;
+        height:15vh;
+        width: 20vw;
+        bottom:5%;
+        right: 5%;
+    }
     </style>
 </head>
 
