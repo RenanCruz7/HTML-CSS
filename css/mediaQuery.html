@@ -12,6 +12,34 @@
             border: solid 5px;
             display: none;
         }
+
+        /*se a largura for igual ou menor a 600px mostra a div muito-pequena*/
+        @media (max-width: 600px){
+            .muito-pequeno {display:block;}
+        }
+
+        /*
+        nesse caso a classe so será aplicada caso a largura seja menor ou igual a 1000px
+        ou se a orientação for retrato para caso de dispositivos moveis
+        */
+        @media (max-width:1000px),(orientation: portrait){
+            .pequeno-retrato{ display:block;}
+        }
+
+        /*
+        nesse caso so vai ser aplicado caso seja maior ou igual a 500px e menor ou igual a 1000px
+        */
+        @media(min-width:500px) and (max-width:1000px){
+            .intervalo{display:block;}
+        }
+        /*
+        portrait = retrato
+        landscape = paisagem
+        */
+        /*
+        caso eu queria inverter e colocar para todos serem display block e para
+        que a media faça ele desaparecer eu posso fazer
+        */
     </style>
 </head>
 <body>
