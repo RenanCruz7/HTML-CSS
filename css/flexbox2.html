@@ -6,7 +6,57 @@
     <title>Flexbox #02</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        di{
+            border: solid 5px dodgerblue;
+            font-size: 40px;
+        }
+        flex-container div{
+            box-sizing: border-box;
+        }
+        .flex-container{
+            display:flex;
+            height:300px;
+            width:600px;
+        }
+        .flex-container div:nth-child(3){
+            background-color: indianred;
+            /*altera a ordem com que o elemento 3 vai ser exibido na tela*/
+            order:1;/**/
+            order: 0;/*posição normal*/
+            order: -1;/*vai ser o 1 elemento*/
+            align-self: center;/*Centralizar*/
+            align-self: flex-end;/*Colocar no final do Eixo*/
+            align-self: flex-start;/*Colocar no começo do Eixo*/
+            align-self: stretch;/*valor padrao*/
+        }
+        /*https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow*/
+        /*Conceito de flex-grow no site acima*/
+        .flex-container div{
+            width: 100px;
+            flex-grow: 0;
+            flex-grow: 1;
+
+        }
+        /*
+        porém flex-grow é basicamente o espaço que sobra sera
+        divido entre os itens que estao nesse container
+        flex-grow determina o quanto eles vao ocupar desse espaço
+        restante
+        quanto maior o peso mais espaço o elemento vai ocupar
+        */
+        .flex-container div:nth-child(1){
+            flex-grow: 2;
+        }
+        .flex-container{
+            width: 300px;
+            flex-shrink: 1;
+        }
+        /*flex-shrink serve para diminuir*/
+        /*https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink*/
+        .flex-container div:nth-child(1){
+            flex-shrink: 5;
+        }
+
     </style>
 </head>
 
