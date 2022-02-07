@@ -6,7 +6,53 @@
     <title>Flexbox #01</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        div{
+            border: solid 5px dodgerblue;
+            margin: 5px;
+        }
+        .big{
+            font-size:1.5em;
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: column; /*transforma a coluna no main eixo */
+            flex-direction: column-reverse;/*inverte a ordem dos elementos*/
+            flex-direction: row-reverse;/*coloca os elementos na mesma linha e inverte eles*/
+            flex-direction: row;/*propriedade padrão do flex-box*/
+            width: 10%;
+            flex-wrap: wrap;/*caso ocorra algum overflow ele pula a linha*/
+            flex-wrap: wrap-reverse;/*pula a linha mais inverte os elementos*/
+            /*a largura e a altura nessa propriedade wrap sempre sera respeitada*/
+            flex-flow: row wrap;
+            flex-flow:column-reverse wrap;
+            /*nessa caso vai organizar tudo na mesma coluna mas vai quebrar os elementos em linhas */
+            flex-flow:row wrap;
+            justify-content: flex-start;/*padrao*/
+            justify-content: flex-end;/*posiciona os elementos no final do eixo principal*/
+            justify-content: center;/*posiciona no centro*/
+            justify-content: space-around;/*coloca de uma forma diluida para ocupar o espaço inteiro*/
+            flex-direction: row-reverse;
+            justify-content: space-between;/*ESPAÇOS NO MEIO DOS ELEMENTOS*/
+
+            /*Cross Axis*/
+            height: 400px;
+            align-items: stretch;/*esticada - padrao*/
+            align-items: baseline;/*vai alinhar os itens com a base na linha deles */
+            align-items: flex-start ;/*vai alinhar pelo começo dos itens*/
+            align-items: flex-end ;/*vai alinhar pelo final dos itens*/
+            align-items: center;/*vai alinhar no centro*/
+
+            /*MAIS DE UMA LINHA: */
+            align-content: flex-start;/*todas as linhas vao para o inicio do flex container*/
+            align-content: flex-end;/*todas as linhas vao para o final do flex container*/
+            align-content: center;/*todas as linhas vao para o centro do flex container*/
+            align-content: space-around;/*vai ficar espaço em volta dos itens*/
+            align-content: space-between;/*espaço entre os itens*/
+        }
+        /*
+        por padrao o display main do flex-box é a linha(row) caso eu queira que o padrao seja a coluna
+        terei que usar um "flex-direction"
+        */
     </style>
 </head>
 
