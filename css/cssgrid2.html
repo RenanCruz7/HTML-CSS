@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <title>CSS Grid #02</title>
     <style>
+        /*
+        https://www.w3schools.com/css/css_grid.asp
+        https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+        */
         html,
         body {
             margin: 20px;
@@ -19,6 +23,24 @@
             font-size: 30px;
             border: solid 5px dodgerblue;
             background: #fff;
+        }
+        /*tambem é possivel colocar nomes para mexer nas posições das grids*/
+        body{
+            display: grid;
+            grid-template-columns: [inicio]1fr [coluna-1]1fr [coluna-2]1fr[fim];
+            grid-template-rows: repeat(3, 1fr);
+            column-gap: 20px;
+            row-gap: 20px;
+            /*shortcut gap = row / column */
+            gap:20px 50px;
+        }
+        .d1{
+            grid-column-start: coluna-2;
+            grid-column-end: fim;
+            grid-column: coluna-1 / fim;/*forma shortcut de fazer a mesma coisa acima*/
+            grid-row: 1/span 2;
+            /*row-start column-star row end column-end*/
+            grid-area:1 / coluna-1/span 3 / fim;
         }
     </style>
 </head>
