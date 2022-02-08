@@ -20,13 +20,20 @@
             flex-direction: row-reverse;/*coloca os elementos na mesma linha e inverte eles*/
             flex-direction: row;/*propriedade padrão do flex-box*/
             width: 10%;
+            /*
+            Flex-wrap explicado : https://developer.mozilla.org/pt-BR/docs/Web/CSS/flex-wrap
+            */
             flex-wrap: wrap;/*caso ocorra algum overflow ele pula a linha*/
             flex-wrap: wrap-reverse;/*pula a linha mais inverte os elementos*/
+
             /*a largura e a altura nessa propriedade wrap sempre sera respeitada*/
+            /*Flex-flow é uma junção das propriedades flex-direction e flex wrap*/
             flex-flow: row wrap;
             flex-flow:column-reverse wrap;
             /*nessa caso vai organizar tudo na mesma coluna mas vai quebrar os elementos em linhas */
             flex-flow:row wrap;
+
+            /*Justify-contente vai alinhar os elementos com base no main axis*/
             justify-content: flex-start;/*padrao*/
             justify-content: flex-end;/*posiciona os elementos no final do eixo principal*/
             justify-content: center;/*posiciona no centro*/
@@ -36,6 +43,7 @@
 
             /*Cross Axis*/
             height: 400px;
+            /*Vai alinhas os elementos com base no Cross Axis*/
             align-items: stretch;/*esticada - padrao*/
             align-items: baseline;/*vai alinhar os itens com a base na linha deles */
             align-items: flex-start ;/*vai alinhar pelo começo dos itens*/
@@ -43,6 +51,7 @@
             align-items: center;/*vai alinhar no centro*/
 
             /*MAIS DE UMA LINHA: */
+            /**https://developer.mozilla.org/pt-BR/docs/Web/CSS/align-content
             align-content: flex-start;/*todas as linhas vao para o inicio do flex container*/
             align-content: flex-end;/*todas as linhas vao para o final do flex container*/
             align-content: center;/*todas as linhas vao para o centro do flex container*/
